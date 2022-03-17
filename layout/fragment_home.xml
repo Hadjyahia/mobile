@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragment.HomeFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="57dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="310dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        style="@style/Base.Theme.Neumorph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/dancesemibold"
+        android:text="Hello,"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <TextView
+        style="@style/Base.Theme.Neumorph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:fontFamily="@font/dancesemibold"
+        android:text="Ghada"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <FrameLayout
+        android:layout_width="330dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp">
+
+        <VideoView
+            android:id="@+id/videoweview"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" />
+
+        <ImageView
+            android:id="@+id/img_start_vid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/play" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="331dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/bg_btn_pub">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePub"
+            android:layout_width="57dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/profile" />
+
+        <EditText
+            android:layout_width="210dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_btn"
+            android:hint="\t\tAny questions ?"
+            android:textColor="@color/black"
+            android:textColorHint="@color/cool_grey"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_photo" />
+
+        <ImageView
+            android:layout_width="51dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_env" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

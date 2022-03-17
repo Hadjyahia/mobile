@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Sign_InActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="254dp"
+        android:layout_height="277dp"
+        android:layout_marginBottom="454dp"
+        android:src="@drawable/component"
+        android:contentDescription="@string/image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="600dp"
+        android:fontFamily="sans-serif-condensed"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.01"
+        android:text="Sign In"
+        android:textColor="#CF3A39"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="311dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:neumorph_shapeType="basin">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint=" Username"
+            android:inputType="textEmailAddress"
+            android:padding="14dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#677A9E"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="33dp"
+            android:src="@drawable/username"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/image"
+            android:layout_marginTop="7dp">
+        </ImageView>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView2"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="311dp"
+        android:layout_height="71dp"
+        app:layout_constraintEnd_toEndOf="@+id/neumorphCardView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/neumorphCardView"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+        app:neumorph_shapeType="basin">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="13dp"
+            android:padding="14dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#677A9E"
+            tools:ignore="RtlSymmetry"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="28dp"
+            android:src="@drawable/password"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp">
+
+        </ImageView>
+
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/signin"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="200dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="203dp"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/neumorphCardView2"
+        app:layout_constraintStart_toStartOf="@+id/neumorphCardView2"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2"
+        app:neumorph_backgroundColor="#CF3A39">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="152dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:letterSpacing="-0.01"
+        android:lineSpacingExtra="4sp"
+        android:text="d’ont have an account ?"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPass" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:letterSpacing="-0.01"
+        android:lineSpacingExtra="4sp"
+        android:text="SIGN UP"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/message" />
+
+    <TextView
+        android:id="@+id/forgotPass"
+        android:layout_width="132dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="160dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:letterSpacing="-0.01"
+        android:lineSpacingExtra="4sp"
+        android:text="Forgot Password ?"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/signin"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/signin"
+        app:layout_constraintTop_toBottomOf="@+id/signin"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--   <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="184dp"
+           android:src="@drawable/cercle"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.409"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/message"
+           app:layout_consntVertical_bias="0.0" />
+       <ScrollView
+
+           android:layout_width="183dp"
+           android:layout_height="52dp"
+           android:layout_marginStart="114dp"
+           app:layout_constraintStart_toStartOf="parent"
+           tools:layout_editor_absoluteY="634dp">
+
+           <soup.neumorphism.NeumorphButton
+               android:id="@+id/login"
+               style="@style/Widget.Neumorph.Button"
+               android:layout_width="204dp"
+               android:layout_height="55dp"
+               android:layout_gravity="center"
+               android:text="Login"
+               app:neumorph_backgroundColor="@color/purple_700"
+               app:neumorph_shapeType="flat" />
+       </ScrollView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
